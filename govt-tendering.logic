@@ -26,6 +26,9 @@
                             <attribute class="com.flyinglogic.logicgraph.operator.FuzzyOrVertexOperator" key="forwardOperator">
                                 <fuzzyOr/>
                             </attribute>
+                            <attribute class="com.arciem.symbol.Symbol" key="symbol">
+                                <symbol generator="com.arciem.symbol.dingbat.DingbatSymbolGenerator" idCode="hand.right"/>
+                            </attribute>
                         </attributes>
                     </vertex>
                     <vertex eid="2">
@@ -73,7 +76,7 @@
                             </attribute>
                         </attributes>
                     </vertex>
-                    <vertex eid="12" inEdgeOrder="9 26">
+                    <vertex eid="12" inEdgeOrder="9 35">
                         <attributes>
                             <attribute class="java.lang.String" key="type">junctor</attribute>
                             <attribute class="com.flyinglogic.logicgraph.operator.FuzzyAndVertexOperator" key="forwardOperator">
@@ -114,7 +117,7 @@
                             </attribute>
                         </attributes>
                     </vertex>
-                    <vertex eid="21" outEdgeOrder="26 28">
+                    <vertex eid="21">
                         <attributes>
                             <attribute class="java.lang.String" key="type">entity</attribute>
                             <attribute class="com.flyinglogic.logicgraph.entityclass.EntityClass" key="entityClass">
@@ -234,17 +237,6 @@
                             </attribute>
                         </attributes>
                     </edge>
-                    <edge eid="26" source="21" target="12">
-                        <attributes>
-                            <attribute class="java.lang.Double" key="weight">1.0</attribute>
-                            <attribute class="com.flyinglogic.logicgraph.operator.MultiplyEdgeOperator" key="forwardOperator">
-                                <multiply/>
-                            </attribute>
-                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
-                                <fuzzyBoolean true="0.5"/>
-                            </attribute>
-                        </attributes>
-                    </edge>
                     <edge eid="28" source="21" target="29">
                         <attributes>
                             <attribute class="java.lang.Double" key="weight">1.0</attribute>
@@ -268,6 +260,17 @@
                         </attributes>
                     </edge>
                     <edge eid="31" source="18" target="29">
+                        <attributes>
+                            <attribute class="java.lang.Double" key="weight">1.0</attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.MultiplyEdgeOperator" key="forwardOperator">
+                                <multiply/>
+                            </attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                        </attributes>
+                    </edge>
+                    <edge eid="35" source="27" target="12">
                         <attributes>
                             <attribute class="java.lang.Double" key="weight">1.0</attribute>
                             <attribute class="com.flyinglogic.logicgraph.operator.MultiplyEdgeOperator" key="forwardOperator">
