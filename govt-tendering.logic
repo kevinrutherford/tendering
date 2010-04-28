@@ -243,6 +243,9 @@
                             <attribute class="com.flyinglogic.logicgraph.operator.FuzzyOrVertexOperator" key="forwardOperator">
                                 <fuzzyOr/>
                             </attribute>
+                            <attribute class="com.arciem.symbol.Symbol" key="symbol">
+                                <symbol generator="com.arciem.symbol.dingbat.DingbatSymbolGenerator" idCode="hand.right"/>
+                            </attribute>
                         </attributes>
                     </vertex>
                     <vertex eid="46" inEdgeOrder="47 95">
