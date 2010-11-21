@@ -976,6 +976,21 @@ even deliverables</attribute>
                             </attribute>
                         </attributes>
                     </vertex>
+                    <vertex eid="157">
+                        <attributes>
+                            <attribute class="java.lang.String" key="type">entity</attribute>
+                            <attribute class="com.flyinglogic.logicgraph.entityclass.EntityClass" key="entityClass">
+                                <entityClass name="Intermediate Effect" uuid="37700c38-6dfd-3458-a9f9-fb6eed52460f"/>
+                            </attribute>
+                            <attribute class="java.lang.String" key="title">high cost implies must be worth it</attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.FuzzyOrVertexOperator" key="forwardOperator">
+                                <fuzzyOr/>
+                            </attribute>
+                        </attributes>
+                    </vertex>
                 </vertices>
                 <edges>
                     <edge eid="3" source="1" target="2">
@@ -1356,6 +1371,9 @@ even deliverables</attribute>
                         <attributes>
                             <attribute class="java.lang.Double" key="weight">1.0</attribute>
                             <attribute class="java.lang.Boolean" key="backEdge">true</attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.MultiplyEdgeOperator" key="forwardOperator">
+                                <multiply/>
+                            </attribute>
                         </attributes>
                     </edge>
                     <edge eid="117" source="116" target="113">
